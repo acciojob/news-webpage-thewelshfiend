@@ -3,14 +3,106 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        header {
+            position: sticky;
+            top: 10px;
+            font-size: smaller;
+            color: white;
+            margin: 10px;
+            padding: 35px;
+            background-color: #011e29;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-inline: 30px;
+        }
+        h2,
+        h3 {
+            margin-bottom: 20px;
+        }
+        img {
+            margin-top: 15px;
+            width: 80%;
+        }
+        p,
+        ul {
+            margin-bottom: 35px;
+        }
+        li {
+            padding-left: 40px;
+        }
+
+        .latest-news-section,
+        .main-section,
+        .pictorial-news-section {
+            width: auto;
+            padding: 40px 20px 0;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .latest-news-section {
+            flex: 1;
+            display: grid;
+            place-items: center;
+        }
+        .main-section {
+            flex: 2;
+            margin-inline: 4px;
+        }
+        .pictorial-news-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- the entire body must be written by student -->
+    <header class="header">
+        <h1>Shaw's News</h1>
+    </header>
+    <main>
+        <div class="latest-news-section">
+            <h3>Latest News Articles</h3>
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+            </ul>
+        </div>
+        <div class="main-section">
+            <h2>Main Article</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna eu fringilla malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros. Sed malesuada, magna eu fringilla malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros.</p>
+        </div>
+        <div class="pictorial-news-section">
+            <h3>Pictorial News</h3>
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg"
+                alt="Image unavailable">
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG"
+                alt="Image unavailable">
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG"
+                alt="Image unavailable">
+        </div>
+    </main>
 
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
